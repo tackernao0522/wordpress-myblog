@@ -75,7 +75,8 @@
         <div class="post-preview">
           <a href="post.html">
             <h2 class="post-title">
-              <?php the_title('■', '●'); ?>
+              <?php $title = the_title('■', '●', false); ?> <!-- falseは表示されないようにしてるだけ -->
+              <?php echo str_replace('新しい', '古い', $title); ?>
             </h2>
             <h3 class="post-subtitle">
               Problems look mighty small from 150 miles up
