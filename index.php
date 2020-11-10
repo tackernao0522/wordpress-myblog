@@ -77,7 +77,10 @@
           <div class="post-preview">
             <a href="post.html">
               <h2 class="post-title">
-                <?php the_title(); ?>
+                <?php while (have_posts()) : the_post(); ?>
+                  <!-- the_post()を必ず入れないと無限ループする --->
+                  <?php the_title(); ?>
+                <?php endwhile; ?>
                 <!-- falseは表示されないようにしてるだけ -->
               </h2>
               <h3 class="post-subtitle">
