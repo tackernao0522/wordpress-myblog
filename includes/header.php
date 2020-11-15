@@ -1,4 +1,6 @@
-  <!-- Navigation -->
+<?php wp_body_open(); ?>
+
+<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand" href="index.html">Start Bootstrap</a>
